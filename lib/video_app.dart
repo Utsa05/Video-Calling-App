@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:video_call_app/app_routes.dart';
-import 'package:video_call_app/presentations/constants/app_color.dart';
 import 'package:video_call_app/presentations/constants/app_route_string.dart';
 
 import 'package:video_call_app/presentations/constants/app_strings.dart';

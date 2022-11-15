@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:video_call_app/presentations/constants/app_color.dart';
+import 'package:video_call_app/presentations/constants/app_route_string.dart';
 
 import 'components/content.dart';
 
@@ -11,12 +14,19 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
-  // @override
-  // void initState() {
-  //   SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
-  //       overlays: [SystemUiOverlay.bottom]);
-  //   super.initState();
-  // }
+  @override
+  void initState() {
+    // SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+    //     overlays: [SystemUiOverlay.bottom]);
+    splashTimer();
+    super.initState();
+  }
+
+  Timer splashTimer() {
+    return Timer(const Duration(seconds: 3), () {
+      Navigator.pushReplacementNamed(context, RouteString.homePage);
+    });
+  }
 
   // @override
   // void dispose() {

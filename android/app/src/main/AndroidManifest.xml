@@ -3,6 +3,7 @@
    <application
         android:label="video_call_app"
         android:name="${applicationName}"
+    
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

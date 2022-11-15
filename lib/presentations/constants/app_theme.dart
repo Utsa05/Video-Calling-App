@@ -11,7 +11,7 @@ class AppTheme {
         headline6: GoogleFonts.openSans(fontSize: 36.0),
         bodyText2: GoogleFonts.openSans(fontSize: 14.0),
       ),
-      brightness: Brightness.light,
+      // brightness: Brightness.light,
       visualDensity: VisualDensity.adaptivePlatformDensity,
       primaryColor: AppColor.lightBlueColor,
       backgroundColor: AppColor.whiteColor,
